@@ -19,7 +19,7 @@
 3. Ubah nilai atribut Mass dan Weight pada tipe RigidBody2D secara bebas di scene BlueShip, lalu coba jalankan scene MainLevel. Apa yang terjadi?
 > Saat ini belum terlihat terjadi apa-apa. Ini mungkin dikarenakan hanya ada satu external force, yaitu gravitasi untuk kecepatan jatuh, yang mana juga memiliki nilai sendiri, Mass dan Weight tidak mempengaruhi kecepatan jatuh.
 4. Ubah nilai atribut Disabled pada tipe CollisionShape2D di scene StonePlatform, lalu coba jalankan scene MainLevel. Apa yang terjadi?
->
+> Tidak ada collision sehingga BlueShip tidak pernah menyentuh (collide) dengan platform. Sehingga akan terus jatuh.
 5. Pada scene MainLevel, coba manipulasi atribut Position, Rotation, dan Scale milik node BlueShip secara bebas. Apa yang terjadi pada visualisasi BlueShip di Viewport?
 >
 6. Pada scene MainLevel, perhatikan nilai atribut Position node PlatformBlue, StonePlatform, dan StonePlatform2. Mengapa nilai Position node StonePlatform dan StonePlatform2 tidak sesuai dengan posisinya di dalam scene (menurut Inspector) namun visualisasinya berada di posisi yang tepat?
