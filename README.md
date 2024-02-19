@@ -21,6 +21,6 @@
 4. Ubah nilai atribut Disabled pada tipe CollisionShape2D di scene StonePlatform, lalu coba jalankan scene MainLevel. Apa yang terjadi?
 > Tidak ada collision sehingga BlueShip tidak pernah menyentuh (collide) dengan platform. Sehingga akan terus jatuh.
 5. Pada scene MainLevel, coba manipulasi atribut Position, Rotation, dan Scale milik node BlueShip secara bebas. Apa yang terjadi pada visualisasi BlueShip di Viewport?
->
+> Position menentukan letak BlueShip pada bidang dua dimensi xy, Rotation menentukan kemiringan tampilan BlueShip dalam derajat, Scale menentukan ukuran tampilan BlueShip (x untuk lebar kanan-kiri, y untuk panjang atas-bawah)
 6. Pada scene MainLevel, perhatikan nilai atribut Position node PlatformBlue, StonePlatform, dan StonePlatform2. Mengapa nilai Position node StonePlatform dan StonePlatform2 tidak sesuai dengan posisinya di dalam scene (menurut Inspector) namun visualisasinya berada di posisi yang tepat?
 >
