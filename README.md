@@ -27,7 +27,7 @@
 ### Latihan Mandiri: Membuat Level Baru
 - Objek [pesawat baru](assets/playerShip2_DShip.png).
 - Objek [landasan baru](assets/pad.png).
-- Desain level yang berbeda dari level awal dengan menempatkan ObjectiveArea di pojok kanan atas atau pojok kana bawah area permainan di level baru.
+- Desain [level yang berbeda](scenes/Level2.tscn) dari level awal dengan menempatkan ObjectiveArea di pojok kanan atas atau pojok kana bawah area permainan di level baru.
 - Silakan berkreasi jika ingin memoles level awal maupun level baru. Beberapa ide polishing:
 > - Implementasi reset kondisi level ketika pesawatnya jatuh ke luar area permainan.
 > - Implementasi transisi level awal ke level baru ketika pemain berhasil mencapai ObjectiveArea. Misalnya menampilkan pesan kemenangan sesaat sebelum pindah level.
