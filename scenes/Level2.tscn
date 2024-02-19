@@ -1,0 +1,39 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://scenes/DShip.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scenes/Pad.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/PadMovement.gd" type="Script" id=3]
+[ext_resource path="res://scenes/ObjectiveArea2.gd" type="Script" id=4]
+[ext_resource path="res://assets/fasilkom.png" type="Texture" id=5]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 81.5, 77 )
+
+[node name="Level2" type="Node"]
+
+[node name="ObjectiveArea2" type="Area2D" parent="."]
+position = Vector2( 943, 520 )
+script = ExtResource( 4 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ObjectiveArea2"]
+position = Vector2( -2.5, 0 )
+shape = SubResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="ObjectiveArea2"]
+texture = ExtResource( 5 )
+
+[node name="PadController" type="Node2D" parent="."]
+position = Vector2( 87, 109 )
+script = ExtResource( 3 )
+
+[node name="Pad" parent="PadController" instance=ExtResource( 2 )]
+
+[node name="Pad2" parent="PadController" instance=ExtResource( 2 )]
+position = Vector2( 0, -42 )
+rotation = 3.14159
+
+[node name="DShip" parent="." instance=ExtResource( 1 )]
+position = Vector2( 86, 87 )
+mass = 50.0
+
+[connection signal="body_entered" from="ObjectiveArea2" to="ObjectiveArea2" method="_on_ObjectiveArea2_body_entered"]
