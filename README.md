@@ -25,7 +25,7 @@
 6. Pada scene MainLevel, perhatikan nilai atribut Position node PlatformBlue, StonePlatform, dan StonePlatform2. Mengapa nilai Position node StonePlatform dan StonePlatform2 tidak sesuai dengan posisinya di dalam scene (menurut Inspector) namun visualisasinya berada di posisi yang tepat?
 > Inspector menentukan letak StonePlatform dan StonePlatform2 berdasarkan Position yang dimiliki PlatformBlue karena keduanya merupakan node yang terhubung di bawah PlatformBlue.
 ### Latihan Mandiri: Membuat Level Baru
-- Objek pesawat baru.
+- Objek [pesawat baru](assets/playerShip2_DShip.png).
 - Objek landasan baru.
 - Desain level yang berbeda dari level awal dengan menempatkan ObjectiveArea di pojok kanan atas atau pojok kana bawah area permainan di level baru.
 - Silakan berkreasi jika ingin memoles level awal maupun level baru. Beberapa ide polishing:
